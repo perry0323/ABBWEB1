@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.split-container {
+    display: flex;
+    height: 100%;
+}
+
+.split {
+    height: 100%;
+    overflow: hidden;
+    flex-grow: 1; /* 让左右两边的内容各自占据整个高度，填满空间 */
+}
+
+.left {
+    width: 50%;
+    /* 左邊畫面空白，可自行設定背景顏色 */
+}
+
+.background{
+    width: 800px;
+    height: auto;
+}
+
+.background-wrapper {
+    position: relative;
+}
+
+.background-text {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.right {
+    width: 50%;
+    border-left: 1px solid rgb(62, 59, 59);
+}
+
+#login-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.loginForm {
+    background-color: #333230;
+    width: 100%; /* 将登录表单宽度设置为100%，以填满整个右半边 */
+    height: 100%;;
+    color: white;
+    padding: 20px; /* 減少 padding，使內容不會超出 */
+    line-height: 30px; /* 調整行高 */
+    border-radius: 15px;
+    text-align: center;
+  
+}
+
+.signup-link {
+    margin-top: 10px; /* 确保 "SIGN IN" 和 "SIGN UP" 按钮与登入表单有一定的垂直间距 */
+    margin-right: 10px; /* 为 "SIGN IN" 和 "SIGN UP" 按钮之间添加水平间距 */
+    color: #f9f7f7; /* 修改链接颜色 */
+    text-decoration: none; /* 移除链接下划线 */
+}
+
+.password-link{
+    color: #f9f7f7; 
+}
+
+.logo {
+    width: 200px; /* 设置图片宽度 */
+    height: 27%;
+}

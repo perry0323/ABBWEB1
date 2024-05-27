@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shoppingcar.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="circle">1</div>
+        <div class="line"></div>
+        <div class="circle2">2</div>
+        <div class="line"></div>
+        <div class="circle3">3</div>
+    </div>
+
+    <div class="circle-text">確認購物車清單</div>
+    <div class="circle-text2">填寫購買資料</div>
+    <div class="circle-text3">購物完成</div>
+    
+    <div class="line1"></div>
+    <div class="car1">
+        <img src="bag1.jpg" alt="h" class="picture">
+        <div class="name">
+            <div class="n2">卡比八啦後背包</div>
+            <div class="n3">淺棕色</div>
+            <div class="price">$240</div>
+        </div>
+        <div class="qt-delete">
+            <div class="qt">
+                <input type="button" class="minus" value="-" style="cursor:pointer;">
+                <input type="text" class="num" value="1">
+                <input type="button" class="add" value="+" style="cursor:pointer;">
+            </div>
+            <script>
+                // 找到所有数量输入框和加减按钮
+                var quantityInputs = document.querySelectorAll('.num');
+                var addButtons = document.querySelectorAll('.add');
+                var minusButtons = document.querySelectorAll('.minus');
+            
+                // 为每个加按钮添加点击事件监听器
+                addButtons.forEach(function(button, index) {
+                    button.addEventListener('click', function() {
+                        // 获取相应的数量输入框和当前数量
+                        var input = quantityInputs[index];
+                        var currentValue = parseInt(input.value);
+            
+                        // 增加数量
+                        input.value = currentValue + 1;
+                    });
+                });
+            
+                // 为每个减按钮添加点击事件监听器
+                minusButtons.forEach(function(button, index) {
+                    button.addEventListener('click', function() {
+                        // 获取相应的数量输入框和当前数量
+                        var input = quantityInputs[index];
+                        var currentValue = parseInt(input.value);
+            
+                        // 确保数量不小于1，然后减少数量
+                        if (currentValue > 1) {
+                            input.value = currentValue - 1;
+                        }
+                    });
+                });
+            </script>
+            <button class="rdelete">刪除</button>
+        </div></div>
+<script>
+    // 找到刪除按鈕元素
+var deleteButtons = document.querySelectorAll('.rdelete');
+
+// 對每個刪除按鈕添加點擊事件監聽器
+deleteButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        // 找到刪除按鈕所在的父元素
+        var parentCar = button.closest('.car1');
+
+        // 找到除了圖片、line1 和 line2 以外的所有元素
+        var elementsToHide = parentCar.querySelectorAll(':not(.img):not(.line1):not(.line2)');
+
+        // 隱藏這些元素
+        elementsToHide.forEach(function(element) {
+            element.style.display = 'none';
+        });
+    });
+});
+</script>
+        <div class="line2"></div>
+
+   <div class="car2">
+        <img src="bag2.jpg" alt="h" class="picture">
+        <div class="name">
+            <div class="n2">公雞側背包</div>
+            <div class="n3">淺棕色</div>
+            <div class="price">$180</div>
+        </div>
+        <div class="qt-delete">
+            <div class="qt">
+                <input type="button" class="minus" value="-" style="cursor:pointer;">
+                <input type="text" class="num" value="1">
+                <input type="button" class="add" value="+" style="cursor:pointer;">
+            </div>
+            <script>
+                // 找到所有数量输入框和加减按钮
+                var quantityInputs = document.querySelectorAll('.num');
+                var addButtons = document.querySelectorAll('.add');
+                var minusButtons = document.querySelectorAll('.minus');
+            
+                // 为每个加按钮添加点击事件监听器
+                addButtons.forEach(function(button, index) {
+                    button.addEventListener('click', function() {
+                        // 获取相应的数量输入框和当前数量
+                        var input = quantityInputs[index];
+                        var currentValue = parseInt(input.value);
+            
+                        // 增加数量
+                        input.value = currentValue + 1;
+                    });
+                });
+            
+                // 为每个减按钮添加点击事件监听器
+                minusButtons.forEach(function(button, index) {
+                    button.addEventListener('click', function() {
+                        // 获取相应的数量输入框和当前数量
+                        var input = quantityInputs[index];
+                        var currentValue = parseInt(input.value);
+            
+                        // 确保数量不小于1，然后减少数量
+                        if (currentValue > 1) {
+                            input.value = currentValue - 1;
+                        }
+                    });
+                });
+            </script>
+            <button class="rdelete">刪除</button>
+        </div></div>
+        <script>
+            // 找到刪除按鈕元素
+        var deleteButtons = document.querySelectorAll('.rdelete');
+        
+        // 對每個刪除按鈕添加點擊事件監聽器
+        deleteButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                // 找到刪除按鈕所在的父元素
+                var parentCar = button.closest('.car1');
+        
+                // 找到除了圖片、line1 和 line2 以外的所有元素
+                var elementsToHide = parentCar.querySelectorAll(':not(.img):not(.line1):not(.line2)');
+        
+                // 隱藏這些元素
+                elementsToHide.forEach(function(element) {
+                    element.style.display = 'none';
+                });
+            });
+        });
+        </script>
+        <div class="line1"></div>
+        <form action="Checkout.html">
+        <input type="submit" value="下一步">
+        </form>
+</body>
+</html>

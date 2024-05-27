@@ -1,0 +1,180 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 将背景图置于最底层 */
+    background-image: url('bg.jpg'); /* 背景图片路径 */
+    background-size: cover; /* 让背景图片填满整个页面 */
+    background-position: center; /* 图片居中显示 */
+}
+
+/* 其他 CSS 样式 */
+
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; /* 调整这个值来移动所有圆形和线条的位置 */
+}
+
+.circle{
+    width: 100px; /* 圆形的直径 */
+    height: 100px; /* 圆形的直径 */
+    background-color: #ffffff; /* 圆形的背景颜色 */
+    border-radius: 50%; /* 创建圆形 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(80, 127, 121); 
+    color: rgb(82, 80, 80); /* 数字的颜色 */
+    font-size: 40px; /* 数字的字体大小 */
+    font-weight: bold; /* 数字的字体粗细 */
+}
+
+.circle2{
+    width: 100px; /* 圆形的直径 */
+    height: 100px; /* 圆形的直径 */
+    background-color: #b7eeef; /* 圆形的背景颜色 */
+    border: 2px solid rgb(80, 127, 121); 
+    border-radius: 50%; /* 创建圆形 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(82, 80, 80); /* 数字的颜色 */
+    font-size: 40px; /* 数字的字体大小 */
+    font-weight: bold; /* 数字的字体粗细 */
+}
+
+.circle3{
+    width: 100px; /* 圆形的直径 */
+    height: 100px; /* 圆形的直径 */
+    background-color: #ffffff; /* 圆形的背景颜色 */
+    border: 2px solid rgb(80, 127, 121); 
+    border-radius: 50%; /* 创建圆形 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(82, 80, 80); /* 数字的颜色 */
+    font-size: 40px; /* 数字的字体大小 */
+    font-weight: bold; /* 数字的字体粗细 */
+}
+
+
+.line {
+    width: 100px; /* 连接线的宽度 */
+    height: 5px; /* 连接线的高度 */
+    background-color: #254c53; /* 连接线的颜色 */
+    margin: 0 10px; /* 连接线与圆形之间的间距 */
+}
+
+.circle-text {
+    margin-top: 20px; /* 调整这个值来控制文字与圆形之间的距离 */
+    margin-right: 440px;
+    font-size: 16px; /* 文字的字体大小 */
+    color: black; /* 文字的颜色 */
+    text-align: center;
+}
+
+.circle-text2 {
+    margin-top: -22px; /* 调整这个值来控制文字与圆形之间的距离 */
+    margin-right: 0px;
+    font-size: 16px; /* 文字的字体大小 */
+    color: black; /* 文字的颜色 */
+    text-align: center;
+}
+
+.circle-text3 {
+    margin-top: -22px; /* 调整这个值来控制文字与圆形之间的距离 */
+    margin-right: -450px;
+    font-size: 16px; /* 文字的字体大小 */
+    color: black; /* 文字的颜色 */
+    text-align: center;
+}
+
+
+.container {
+    border: 1px solid #ffffff; /* Border around the container */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    width: 600px;
+    height: 450px;
+    background-color: #77a5a1; /* Background color */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%); /* Move the container to the center */
+}
+
+.input-field {
+    padding: 15px;
+    width: 200px;
+    height: 5px;
+    margin-left: 10px;
+}
+
+.input-field-small {
+    padding: 15px;
+    width: 200px;
+    height: 5px;
+}
+
+.input-field-medium {
+    padding: 15px;
+    width: 250px;
+    margin-left: 7px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #0b492f; 
+}
+
+.radio-group input[type="radio"],
+.radio-group label {
+    margin-right: 10px;
+}
+
+.cash-on-delivery {
+    padding: 10px;
+    width: 100px;
+    margin-left: 15px; /* Adjust the value to align properly */
+    
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add more space between the input fields */
+    color: #0b492f; 
+}
+
+.input-group b {
+    margin-right: 10px;
+}
+
+.payway-title {
+    margin-left: -40px; /* Adjust the value to move left */
+    margin-bottom: 10px; /* Space below the title */
+    color: #0b492f; 
+}
+
+.checktitle{
+    color: #0b492f;
+}
+
+.submit-buttons {
+    position: absolute; /* Set buttons to absolute position */
+    bottom: 20px; /* Adjust bottom distance */
+    right: 20px; /* Adjust right distance */
+    display: flex;
+}
+
+.submit-buttons form {
+    margin-right: 10px; /* 调整两个按钮之间的间距 */
+}
+
